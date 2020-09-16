@@ -3,12 +3,9 @@
 # http://i3wm.org/docs/userguide.html#_configuring_i3bar
 
 general {
-        color_separator = "#ff0000"
-        output_format = "i3bar"
-        markup = "pango"
-        colors = true
-        color_good = "#00ff00"
-        interval = 2
+	colors = true
+        output_format = i3bar
+	interval = 5
 }
 
 order += "disk /"
@@ -21,35 +18,31 @@ order += "volume master"
 order += "time"
 
 battery 0 {
-        format = "%status %percentage %remaining"
-}
-
-run_watch VPN {
-        pidfile = "/var/run/vpnc/pid"
+        format = "Battery status 🔋 %status %percentage %remaining"
 }
 
 time {
-        format = "W%V %a %Y-%m-%d %H:%M"
+        format = "Date time 🕐  W%V %a %Y-%m-%d %H:%M"
 }
 
 cpu_usage {
-    format = "CPU:%usage"
+    format = "Cpu load 💻 %usage"
 }
 
 cpu_temperature 0 {
-        format = "%degrees°C"
+        format = "Cpu temp 🌡 %degrees°c"
 }
 
 disk "/" {
-        format = "DISK:%free"
+        format = "Root 💾 %free"
 }
 
 disk "/home" {
-        format = "%free"
+        format = "Home 💾 %free"
 }
 
 volume master {
-   format = "♪ %volume"
+   format = "Volume ♬💃 %volume"
    device = "default"
    mixer = "Master"
    mixer_idx = 0
