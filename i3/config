@@ -20,6 +20,9 @@ bindsym $mod+g  exec --no-startup-id thunar
 #set background
 exec feh --bg-fill ~/.wallpaper.jpg 
 
+#start the copy paste thingy applet
+exec --no-startup-id parcellite
+
 #start the bluetooth applet
 exec blueman-applet
 
@@ -194,7 +197,7 @@ bindsym $mod+d exec dmenu_run -nb '#d789d7' -sf '#d789d7' -sb '#5d54a4' -nf '#5d
 # finds out, if available)
 bar {
 	position top
-        status_command i3status
+        status_command i3status | ~/.config/i3/i3spotify/pystatus.py
 colors {
 	# bar colours
          background $co1
