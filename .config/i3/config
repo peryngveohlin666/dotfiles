@@ -20,6 +20,9 @@ bindsym $mod+g  exec --no-startup-id thunar
 #set background
 exec feh --bg-fill ~/.wallpaper.jpg 
 
+#no borders
+for_window [class=".*"] border pixel 3
+
 #start the copy paste thingy applet
 exec --no-startup-id parcellite
 
