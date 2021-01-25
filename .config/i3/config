@@ -5,6 +5,13 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+set $co1 #1d0f0b
+set $co2 #796d5d
+set $co3 #baae97
+set $co4 #a6a7a5
+set $co5 #615e59
+set $co6 #ffffff
+
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
@@ -148,7 +155,8 @@ bindsym $mod+0 workspace number $ws10
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
-bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+3 move container to workspace set $co5 #fa26a0
+set $co6 #ffffffnumber $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
 bindsym $mod+Shift+5 move container to workspace number $ws5
 bindsym $mod+Shift+6 move container to workspace number $ws6
@@ -191,16 +199,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $co1 #d789d7'
-set $co2 #9d65c9
-set $co3 #5d54a4
-set $co4 #2a3d66
-set $co5 #fa26a0
-set $co6 #ffffff
-
 
 # start dmenu
-bindsym $mod+d exec dmenu_run -nb '#d789d7' -sf '#d789d7' -sb '#5d54a4' -nf '#5d54a4'
+bindsym $mod+d exec dmenu_run -nb '#1d0f0b' -sf '#1d0f0b' -sb '#baae97' -nf '#baae97'
 
  
 # Start i3bar to display a workspace bar (plus the system information i3status
