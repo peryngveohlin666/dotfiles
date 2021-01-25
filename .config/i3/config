@@ -15,10 +15,17 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:monospace 8
 
+# bigger text
+font size == taller
+
+# gaps
+gaps inner 5
+gaps outer 5
+
 bindsym $mod+g  exec --no-startup-id thunar
 
 #set background
-exec feh --bg-fill ~/.wallpaper.jpg 
+exec feh --bg-fill ~/.wallpaper.png 
 
 #no borders
 for_window [class=".*"] border pixel 3
@@ -200,7 +207,7 @@ bindsym $mod+d exec dmenu_run -nb '#d789d7' -sf '#d789d7' -sb '#5d54a4' -nf '#5d
 # finds out, if available)
 bar {
 	position top
-        status_command i3status | ~/.config/i3/i3spotify/pystatus.py
+        status_command i3status
 colors {
 	# bar colours
          background $co1

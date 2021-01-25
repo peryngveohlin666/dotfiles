@@ -11,38 +11,32 @@ general {
 order += "disk /"
 order += "disk /home"
 order += "cpu_usage"
-order += "cpu_temperature 0"
-order += "mempercent"
-order += "battery 0"
+order += "memory"
 order += "volume master"
 order += "time"
 
-battery 0 {
-        format = "Battery status 🔋 %status %percentage %remaining"
+time {
+        format = "Date time: W%V %a %Y-%m-%d %H:%M"
 }
 
-time {
-        format = "Date time 🕐  W%V %a %Y-%m-%d %H:%M"
+memory {
+    format= " Free RAM: %available "
 }
 
 cpu_usage {
-    format = "Cpu load 💻 %usage"
-}
-
-cpu_temperature 0 {
-        format = "Cpu temp 🌡 %degrees°c"
+    format = "Cpu load: %usage"
 }
 
 disk "/" {
-        format = "Root 💾 %free"
+        format = "Root: %free"
 }
 
 disk "/home" {
-        format = "Home 💾 %free"
+        format = "Home: %free"
 }
 
 volume master {
-   format = "Volume ♬💃 %volume"
+   format = "Volume %volume"
    device = "default"
    mixer = "Master"
    mixer_idx = 0
