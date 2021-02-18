@@ -121,6 +121,10 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
+# take screenshots
+bindsym Print       exec flameshot full -p ~/screenshots
+bindsym Shift+Print exec flameshot gui -p ~/screenshots
+
 # focus the parent container
 bindsym $mod+a focus parent
 

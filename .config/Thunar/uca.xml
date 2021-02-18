@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1611509150249155-1</unique-id>
+	<command>terminator -e &apos;cd %f; exec bash&apos;</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon></icon>
+	<name></name>
+	<unique-id>1611535483658801-1</unique-id>
+	<command></command>
+	<description></description>
+	<patterns>*</patterns>
+</action>
+<action>
+	<icon></icon>
+	<name></name>
+	<unique-id>1613663843444723-1</unique-id>
+	<command>terminator</command>
+	<description></description>
+	<patterns>*</patterns>
+</action>
+</actions>
